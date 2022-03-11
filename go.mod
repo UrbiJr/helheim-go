@@ -1,3 +1,3 @@
-module github.com/bogdanfinn/helheim-go
+module github.com/UrbiJr/helheim-go
 
 go 1.15
