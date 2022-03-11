@@ -101,13 +101,18 @@ type CaptchaOptions struct {
 }
 
 type RequestOptions struct {
-	Method  string            `json:"method"`
-	Url     string            `json:"url"`
-	Options map[string]string `json:"options"`
+	Method  string                 `json:"method"`
+	Url     string                 `json:"url"`
+	Options map[string]interface{} `json:"options"`
 }
 
 type KasadaOptions struct {
 }
 
+type KasadaHookMethod struct {
+	Method map[string][]string `json:"method"`
+}
+
 type KasadaHooksOptions struct {
+	Hooks map[string]KasadaHookMethod `json:"hooks"`
 }
